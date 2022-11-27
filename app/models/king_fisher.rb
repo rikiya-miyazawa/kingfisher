@@ -1,0 +1,2 @@
+class KingFisher < ApplicationRecord
+end
