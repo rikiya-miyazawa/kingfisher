@@ -1,2 +1,0 @@
-class KingFisher < ApplicationRecord
-end
