@@ -1,5 +1,5 @@
 <h1>つぶやき一覧</h1>
-
+<p><%= notice %></p>
 <table>
   <tr>
     <th>あなたのつぶやき</th>
@@ -9,7 +9,7 @@
   <tr>
     <td><%= post.content %></td>
     <td><%= link_to "つぶやき書き換えちゃう？", edit_post_path(post.id) %></td>
-    <td><%= link_to 'つぶやき消したいの?', post_path(post.id), method: :delete %></td>
+    <td><%= link_to 'つぶやき消したいの?', post_path(post.id), method: :delete,data: { confirm: 'ほんとに？' }  %></td>
   </tr>
 <% end %>
 </table>
