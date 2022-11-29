@@ -11,6 +11,30 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container1">
+      <header>
+        <div class="header-logo">
+          <%= link_to("Kingfisher", "/posts") %>
+        </div>
+        <ul class="header-menus">
+          <li>
+            <%= link_to("投稿一覧", posts_path) %>
+          </li>
+          <li>
+            <%= link_to("新規投稿", new_post_path) %>
+          </li>
+        </ul>
+      </header>
+      <div class="container">
+        <%= yield %>
+      </div>
+      <footer>
+        <ul class="footer-logo" >
+          <li>
+            課題 ツイートアプリケーション
+          </li>
+        </ul>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,3 +1,76 @@
 // Place all the styles related to the kingfishers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  margin: 0;
+  min-height: 1vh;
+}
+
+header {
+  background-color: #3ecdc6;
+  height: 60px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0px;
+}
+
+.header-logo {
+  float: left;
+  padding-left: 20px;
+  font-size: 22px;
+  line-height: 64px;
+}
+
+.header-logo a{
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.header-menus {
+  float: right;
+  padding-right: 20px;
+  list-style-type: none;
+}
+
+.header-menus li {
+  float: left;
+  line-height: 64px;
+  font-size: 13px;
+  color: white;
+  padding-left: 15px;
+}
+
+.header-menus a {
+  float: left;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  clear: both;
+  background-image: url(kingfisher.jpg);
+  background-size:  cover;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer-logo {
+  background-color: #3ecdc6;
+  height: 60px;
+  width: 100%;
+  bottom: 0px;
+  margin-top: auto;
+}
+
+.footer-logo li {
+  list-style-type: none;
+  text-align: center;
+  color: white;
+}
